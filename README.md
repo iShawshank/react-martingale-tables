@@ -12,13 +12,13 @@ Very simple! Just run `npm i react-martingale-tables`
 
 Only required param is `stratName`
 
-| prop           | default | type    | description                                |
-| -------------- | ------- | ------- | ------------------------------------------ |
-| stratName      | none    | string  | strategy name / title                      |
-| multiplier     | 1       | number  | Unit size multiplier (ex: how many bets)   |
-| win            | 1       | number  | Profit amount on win                       |
-| additionalUnit | 0       | number  | additional units to add to loss multiplier |
-| showProfit     | true    | boolean | show / hide profit calculation             |
+| prop           | default | type    | description                                   |
+| -------------- | ------- | ------- | --------------------------------------------- |
+| stratName      | none    | string  | Strategy name / title                         |
+| multiplier     | 1       | number  | Unit multiplier (aka: how many bets per unit) |
+| win            | 1       | number  | Profit units on win                           |
+| additionalUnit | 0       | number  | Additional units to add to loss multiplier    |
+| showProfit     | true    | boolean | Show / hide profit calculation                |
 
 ## Basic example
 
@@ -66,3 +66,14 @@ import MartingaleTable from 'react-martingale-tables';
   additionalUnit={1}
 />;
 ```
+
+## Examples:
+
+You can run this package locally by cloning this repo and running the following:
+
+```
+npm install
+npm start
+```
+
+This will launch the a vite app from src/main.tsx and should mount several MartingaleTable components with different strategies
