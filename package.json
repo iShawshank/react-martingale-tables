@@ -11,8 +11,7 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.es.js",
       "require": "./dist/index.umd.js"
-    },
-    "./martingale": "./dist/react-martingale-tables.css"
+    }
   },
   "files": [
     "dist",
