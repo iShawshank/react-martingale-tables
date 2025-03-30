@@ -26,6 +26,10 @@ If you only mount with the required param the component will render the outside 
 
 ```javascript
 import MartingaleTable from 'react-martingale-tables';
+
+// Import the styles (unless you want to roll your own)
+import 'react-martingale-tables/martingale.css';
+
 // Then mount the component in your JSX
 <MartingaleTable stratName="Outside 1:1 bets" />;
 ```
@@ -38,6 +42,7 @@ import MartingaleTable from 'react-martingale-tables';
 
 ```javascript
 import MartingaleTable from 'react-martingale-tables';
+import 'react-martingale-tables/martingale.css';
 // Then mount the component in your JSX
 <MartingaleTable stratName="9 Streets" multiplier={9} win={3} />;
 ```
@@ -46,6 +51,7 @@ import MartingaleTable from 'react-martingale-tables';
 
 ```javascript
 import MartingaleTable from 'react-martingale-tables';
+import 'react-martingale-tables/martingale.css';
 // Then mount the component in your JSX
 <MartingaleTable
   stratName="5 Double Streets"
@@ -58,6 +64,7 @@ import MartingaleTable from 'react-martingale-tables';
 
 ```javascript
 import MartingaleTable from 'react-martingale-tables';
+import 'react-martingale-tables/martingale.css';
 // Then mount the component in your JSX
 <MartingaleTable
   stratName="Outside bets (Double + 1 unit on loss)"
