@@ -31,3 +31,38 @@ import MartingaleTable from 'react-martingale-tables';
 ```
 
 ![Basic Example](/src/assets/basicExample.png)
+
+## Other strategy examples
+
+### 9 streets
+
+```javascript
+import MartingaleTable from 'react-martingale-tables';
+// Then mount the component in your JSX
+<MartingaleTable stratName="9 Streets" multiplier={9} win={3} />;
+```
+
+### Double Streets
+
+```javascript
+import MartingaleTable from 'react-martingale-tables';
+// Then mount the component in your JSX
+<MartingaleTable
+  stratName="5 Double Streets"
+  multiplier={5}
+  win={1}
+/>;
+```
+
+### Outside bets (Double + 1 unit on loss)
+
+```javascript
+import MartingaleTable from 'react-martingale-tables';
+// Then mount the component in your JSX
+<MartingaleTable
+  stratName="Outside bets (Double + 1 unit on loss)"
+  multiplier={1}
+  win={1}
+  additionalUnit={1}
+/>;
+```
