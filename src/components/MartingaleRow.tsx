@@ -1,8 +1,8 @@
-import { IRow } from "../interfaces/Row";
 import './martingale.css';
+import { TableRow } from './types';
 
 interface IProps {
-  row: IRow;
+  row: TableRow;
   index: number;
   bankroll: number;
   handleClick: (index: number) => void;

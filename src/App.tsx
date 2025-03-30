@@ -3,47 +3,30 @@ import './app.css';
 
 function App() {
   return (
-    <>
-      <div
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: '20px',
-          width: '100%',
-        }}
-      >
+    <div className="app">
+      <div className="app-row">
         <MartingaleTable
-          tableName="9 Streets"
+          stratName="9 Streets"
           multiplier={9}
           win={3}
           showProfit={true}
         />
         <MartingaleTable
-          tableName="5 Double Streets"
+          stratName="5 Double Streets"
           multiplier={5}
           win={1}
         />
       </div>
-      <div
-        style={{
-          display: 'flex',
-          gap: '20px',
-          flexWrap: 'wrap',
-          width: '100%',
-        }}
-      >
+      <div className="app-row">
+        <MartingaleTable stratName="Outside 1:1 bets" />
         <MartingaleTable
-          tableName="Outside 1:1 bets"
+          stratName="Outside bets (Double + 1 unit on loss)"
           multiplier={1}
           win={1}
-        />
-        <MartingaleTable
-          tableName="Outside bets (Double + 1 unit on loss)"
-          multiplier={1}
-          win={1}
+          additionalUnit={1}
         />
       </div>
-    </>
+    </div>
   );
 }
 

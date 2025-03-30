@@ -1,30 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import debounce from 'lodash/debounce';
-import { IRow } from '../interfaces/Row';
 import { calculateTable } from '../utils/martingale';
 import MartingaleRow from './MartingaleRow';
 import './martingale.css';
-
-interface IProps {
-  tableName: string;
-  multiplier?: number;
-  win?: number;
-  additionalUnit?: number;
-  showProfit?: boolean;
-  tenRows?: boolean;
-}
+import { MartingaleTableProps, TableRow } from './types';
 
 const MartingaleTable = ({
-  tableName,
+  stratName,
   multiplier = 1,
   win = 1,
   additionalUnit = 0,
-  tenRows = false,
   showProfit = true,
-}: IProps) => {
+}: MartingaleTableProps) => {
   const [lossMulti, setLossMulti] = useState(2);
   const [unit, setUnit] = useState(1);
-  const [rows, setRows] = useState<IRow[]>([]);
+  const [rows, setRows] = useState<TableRow[]>([]);
   const [selectedRowId, setSelectedRowId] = useState<number | null>(
     null
   );
@@ -64,11 +54,11 @@ const MartingaleTable = ({
     setRows(
       calculateTable(unit, multiplier, win, lossMulti, additionalUnit)
     );
-  }, [unit, multiplier, win, lossMulti, tenRows, additionalUnit]);
+  }, [unit, multiplier, win, lossMulti, additionalUnit]);
 
   return (
     <div className="martingale">
-      <p className="martingale-header">{tableName}</p>
+      <p className="martingale-header">{stratName}</p>
       <div className="martingale-inputs">
         <div className="input">
           <label htmlFor="bankroll">Bankroll</label>

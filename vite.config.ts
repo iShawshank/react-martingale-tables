@@ -1,26 +1,26 @@
-import path from "path";
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import dts from "vite-plugin-dts";
+import path from 'path';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
   build: {
     //Specifies that the output of the build will be a library.
     lib: {
-      //Defines the entry point for the library build. It resolves 
-      //to src/index.ts,indicating that the library starts from this file.
-      entry: path.resolve(__dirname, "src/index.ts"),
-      name: "react-jp-ui",
+      //Defines the entry point for the library build. It resolves to src/index.ts,
+      //indicating that the library starts from this file.
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      name: 'react-martingale-tables',
       //A function that generates the output file
       //name for different formats during the build
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ['react', 'react-dom'],
       output: {
         globals: {
-          react: "React",
-          "react-dom": "ReactDOM",
+          react: 'React',
+          'react-dom': 'ReactDOM',
         },
       },
     },

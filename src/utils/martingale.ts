@@ -1,4 +1,4 @@
-import { IRow } from '../interfaces/Row';
+import { TableRow } from '../components/types';
 
 const MAX_ROWS = 20;
 
@@ -8,7 +8,7 @@ export const calculateTable = (
   win: number,
   lossMultiplier: number,
   additionalUnit: number
-): IRow[] => {
+): TableRow[] => {
   const tableRows = [];
   let currentBet = unit * multiplier;
   let loss = 0;
