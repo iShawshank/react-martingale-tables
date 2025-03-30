@@ -11,4 +11,4 @@ export type TableRow = {
   loss: number;
   currentBet: number;
   recover: number;
-}
+};
