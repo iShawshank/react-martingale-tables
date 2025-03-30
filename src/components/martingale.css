@@ -1,0 +1,170 @@
+.martingale {
+  font-family: 'Poppins', sans-serif;
+  max-width: 672px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-width: 2px;
+  border-color: #3ef016;
+  border-radius: 0.75rem /* 4px */;
+  background-color: #000000;
+  color: #fff;
+  border-style: solid;
+  width: 100%;
+}
+
+input {
+  border-color: #3ef016;
+  border-radius: 0.25rem /* 4px */;
+  border-width: 2px;
+  border-style: solid;
+  padding-inline: 10px;
+  color: #3ef016;
+  background-color: #111827;
+  width: 75px;
+  height: 25px;
+}
+
+input::placeholder {
+  border-color: #3ef016;
+  color: #3ef016;
+}
+
+.focused-row,
+.martingale-row:hover {
+  border-color: #3ef016;
+  border-width: 1px;
+}
+
+.martingale-header {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.martingale-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.aligned-inputs {
+  display: flex;
+  width: 100%;
+  margin-block: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem /* 16px */;
+  @media (min-width: 1024px) {
+    gap: 2.5rem /* 40px */;
+  }
+}
+
+.input {
+  gap: 1rem /* 16px */;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-inline: 3px;
+}
+
+.table-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  text-align: center;
+  margin-bottom: 3px;
+  padding-inline: 5px;
+}
+
+.table-header-cell {
+  flex-wrap: wrap;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.table-body {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: scroll;
+  max-height: 18rem /* 288px */;
+  padding-inline: 5px;
+}
+
+.martingale-row {
+  width: 100%;
+  margin-inline: 2px;
+  margin-block: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 22px;
+}
+
+.martingale-row > *:nth-child(n + 2) {
+  border-left: 2px solid #3ef016; /* Starts from the second child */
+}
+
+.bg-red-900 {
+  background-color: #7f1d1d;
+}
+
+.focused-row,
+.martingale-row:hover {
+  border-color: #3ef016;
+  border-width: 2px;
+  border-style: solid;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+  height: 22px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-red-500 {
+  color: #ef4444;
+}
+
+.text-green {
+  color: #3ef016;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
