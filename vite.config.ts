@@ -11,6 +11,7 @@ export default defineConfig({
       //indicating that the library starts from this file.
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'react-martingale-tables',
+      cssFileName: 'martingale',
       //A function that generates the output file
       //name for different formats during the build
       fileName: (format) => `index.${format}.js`,
