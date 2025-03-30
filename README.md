@@ -1,4 +1,4 @@
-# React Martingale Tables [![npm](https://img.shields.io/github/package-json/v/js-cookie/js-cookie)](https://www.npmjs.com/package/js-cookie) [![size](https://img.shields.io/bundlephobia/minzip/js-cookie/3)](https://www.npmjs.com/package/js-cookie)
+# React Martingale Tables [![npm](https://img.shields.io/npm/v/react-martingale-tables.svg)](https://www.npmjs.com/package/react-martingale-tables) [![size](https://img.shields.io/bundlephobia/minzip/react-martingale-tables)](https://www.npmjs.com/package/react-martingale-tables)
 
 A simple, lightweight, TypeScript React component for Roulette Martingale Tables for various strategies.
 
