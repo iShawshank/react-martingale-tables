@@ -12,7 +12,7 @@
       "import": "./dist/index.es.js",
       "require": "./dist/index.umd.js"
     },
-    "./martingale.css": "./dist/react-martingale-tables.css"
+    "./martingale": "./dist/react-martingale-tables.css"
   },
   "files": [
     "dist",
